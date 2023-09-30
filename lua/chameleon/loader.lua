@@ -2,7 +2,7 @@ local config = require("chameleon.config")
 
 local function save(theme_name)
 	local theme_config = config.name_to_config(theme_name)
-	local save_path = config.get_config().save_dir_path
+	local save_path = config.get_config().save_path
 
 	local file = io.open(save_path, "r")
 	if file == nil then
@@ -36,7 +36,7 @@ local function save(theme_name)
 end
 
 local function restore()
-	local save_path = config.get_config().save_dir_path
+	local save_path = config.get_config().save_path
 	local saved_config = dofile(save_path)
 
 	if not saved_config.colorscheme then

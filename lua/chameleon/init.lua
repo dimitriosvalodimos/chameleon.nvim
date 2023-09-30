@@ -29,7 +29,7 @@ local switch = function(opts)
 		end
 	end
 
-	if config.save_dir_enabled() then
+	if config.save_path_enabled() then
 		loader.save(opts)
 	end
 end

@@ -1,11 +1,11 @@
 local _setup = {}
 
 local function normalize_path()
-	if not _setup.save_dir_path then
+	if not _setup.save_path then
 		return
 	end
 
-	_setup.save_dir_path = vim.fn.fnamemodify(_setup.save_dir_path, ":p")
+	_setup.save_path = vim.fn.fnamemodify(_setup.save_path, ":p")
 end
 
 local function normalize_setup()
@@ -39,8 +39,8 @@ local function get_config()
 	return _setup
 end
 
-local function save_dir_enabled()
-	return _setup.save_dir_path ~= nil
+local function save_path_enabled()
+	return _setup.save_path ~= nil
 end
 
 local function name_to_config(theme_name)
@@ -56,7 +56,7 @@ return {
 	setup = setup,
 	normalize_path = normalize_path,
 	normalize_setup = normalize_setup,
-	save_dir_enabled = save_dir_enabled,
+	save_path_enabled = save_path_enabled,
 	get_config = get_config,
 	name_to_config = name_to_config,
 }
