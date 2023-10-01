@@ -4,6 +4,8 @@ Theme switcher for neovim
 
 ---
 
+![small demo](https://github.com/dimitriosvalodimos/chameleon.nvim/blob/main/chameleon.gif)
+
 # :construction: CAUTION :construction:
 
 This is my first plugin for anything, ever! It's also my first try at Lua. You have been warned.
@@ -15,7 +17,7 @@ This is my first plugin for anything, ever! It's also my first try at Lua. You h
 
 ## Wishlist
 
-- [] theme preview on 'hover'
+- [ ] theme preview on 'hover'
 
 ## Setup
 
