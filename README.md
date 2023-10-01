@@ -1,4 +1,4 @@
-chameleon.nvim
+# chameleon.nvim
 
 Theme switcher for neovim
 
