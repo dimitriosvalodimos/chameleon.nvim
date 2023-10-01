@@ -117,7 +117,7 @@ local chameleon_config = {
 require("lazy").setup({
     ... -- themes
     {
-        "dimitriosvalodims/chameleon.nvim",
+        "dimitriosvalodimos/chameleon.nvim",
         lazy = false,
         config = function()
             local chameleon = require("chameleon")
@@ -127,7 +127,7 @@ require("lazy").setup({
     },
     {
         "nvim-telescope/telescope.nvim",
-        dependencies = { "dimitriosvalodims/chameleon.nvim" },
+        dependencies = { "dimitriosvalodimos/chameleon.nvim" },
         config = function()
             local telescope = require("telescope")
             telescope.setup({
